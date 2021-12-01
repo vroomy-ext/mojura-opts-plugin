@@ -22,7 +22,7 @@ type opts struct {
 	vroomy.BasePlugin
 
 	out  *scribe.Scribe
-	opts *mojura.Opts
+	opts mojura.Opts
 
 	Source kiroku.Source `vroomy:"mojura-source"`
 }
