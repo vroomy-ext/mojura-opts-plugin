@@ -30,7 +30,7 @@ type opts struct {
 // Load will initialize the s3 client
 func (o *opts) Load(env map[string]string) (err error) {
 	o.out = scribe.New("Mojura Options")
-	if o.opts.Dir = env["mojura-sync-mode"]; len(o.opts.Dir) == 0 {
+	if o.opts.Dir = env["mojura-dir"]; len(o.opts.Dir) == 0 {
 		o.opts.Dir = env["dataDir"]
 	}
 
