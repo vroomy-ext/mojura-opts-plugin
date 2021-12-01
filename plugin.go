@@ -31,6 +31,7 @@ type opts struct {
 func (o *opts) Load(env map[string]string) (err error) {
 	o.out = scribe.New("Mojura Options")
 	if o.opts.Dir = env["mojura-dir"]; len(o.opts.Dir) == 0 {
+		o.out.Notification("Environment variable \"mojura-dir\" is not provided, falling back to \"dataDir\"")
 		o.opts.Dir = env["dataDir"]
 	}
 
