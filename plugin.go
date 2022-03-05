@@ -30,7 +30,8 @@ type opts struct {
 // Load will initialize the s3 client
 func (o *opts) Load(env vroomy.Environment) (err error) {
 	o.out = scribe.New("Mojura Options")
-	if o.opts.Dir = env["mojura-sync-mode"]; len(o.opts.Dir) == 0 {
+	if o.opts.Dir = env["mojura-dir"]; len(o.opts.Dir) == 0 {
+		o.out.Notification("Environment variable \"mojura-dir\" is not provided, falling back to \"dataDir\"")
 		o.opts.Dir = env["dataDir"]
 	}
 
