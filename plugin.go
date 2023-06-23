@@ -35,6 +35,8 @@ func (o *opts) Load(env vroomy.Environment) (err error) {
 		o.opts.Dir = env["dataDir"]
 	}
 
+	o.opts.Namespace = env["mojura-namespace"]
+
 	switch env["mojura-sync-mode"] {
 	case "development":
 		o.out.Notification("Development mode enabled, disabling s3 DB syncing")
