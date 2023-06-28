@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	github.com/gdbu/scribe v0.5.3
-	github.com/mojura/kiroku v0.10.1
-	github.com/mojura/mojura v0.17.1
+	github.com/mojura/kiroku v0.10.2
+	github.com/mojura/mojura v0.17.2
 	github.com/vroomy/vroomy v0.17.0
 )
 
