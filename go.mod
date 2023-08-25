@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	github.com/gdbu/scribe v0.5.3
-	github.com/mojura/kiroku v0.10.2
-	github.com/mojura/mojura v0.17.2
+	github.com/mojura/kiroku v0.12.2
+	github.com/mojura/mojura v0.20.0
 	github.com/vroomy/vroomy v0.17.0
 )
 
@@ -24,7 +24,7 @@ require (
 	github.com/hatchify/errors v0.4.82 // indirect
 	github.com/mojura-backends/bolt v0.2.1 // indirect
 	github.com/mojura/backend v0.2.1 // indirect
-	github.com/mojura/enkodo v0.5.6 // indirect
+	github.com/mojura/enkodo v0.5.7 // indirect
 	github.com/vroomy/httpserve v0.10.0 // indirect
 	golang.org/x/crypto v0.7.0 // indirect
 	golang.org/x/net v0.8.0 // indirect
