@@ -40,6 +40,7 @@ func (o *opts) Load(env vroomy.Environment) (err error) {
 	switch env["mojura-sync-mode"] {
 	case "development":
 		o.out.Notification("Development mode enabled, disabling s3 DB syncing")
+		o.opts.Source = &kiroku.NOOP{}
 	case "mirror":
 		o.out.Notification("Mirror mode enabled, enabling s3 read-only DB syncing")
 		o.opts.IsMirror = true
